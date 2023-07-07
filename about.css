@@ -248,9 +248,7 @@
     /* flex-wrap: wrap; */
 }
 
-.AboutMeInDetail .img {
-    /* border: 2px solid green; */
-}
+
 
 .AboutMeInDetail .img img {
     /* width: 100%; */
@@ -395,7 +393,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/img/discountBackGround.jpg");
+    background-image: url("./img/discountBackGround.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -424,7 +422,6 @@
     font-family: 'Philosopher', sans-serif;
 }
 
-.AboutTeam .teamImgInfo .fourthBox .sale {}
 
 .AboutTeam .teamImgInfo .fourthBox .btn {
     border: 1px solid #fff;
@@ -449,7 +446,6 @@
     color: var(--ast-global-color-1);
 }
 
-.AboutTeam .teamImgInfo .box .img {}
 
 .AboutTeam .teamImgInfo .box .img img {
     width: 100%;
@@ -459,9 +455,7 @@
 
 }
 
-.AboutTeam .teamImgInfo .box .name {}
 
-.AboutTeam .teamImgInfo .box .position {}
 
 /* footer  */
 .Myfooter {

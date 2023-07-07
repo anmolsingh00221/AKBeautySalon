@@ -329,8 +329,6 @@ body {
 }
 
 @media only screen and (min-width:425px) and (max-width: 768px) {
-    .fourImage {}
-
 
     .FrontPage .button a:nth-child(1) {
         margin-right: 0;

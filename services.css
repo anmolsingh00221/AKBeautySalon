@@ -288,7 +288,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(/img/nailart_1.jpg);
+    background: url(./img/nailart_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -304,7 +304,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/haircut_2.jpg);
+    background-image: url(./img/haircut_2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -320,7 +320,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/massage_3.jpg);
+    background-image: url(./img/massage_3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -336,7 +336,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/cosmetics_4.jpg);
+    background-image: url(./img/cosmetics_4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -352,7 +352,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/spa_5.jpg);
+    background-image: url(./img/spa_5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -368,7 +368,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/botox_6.jpg);
+    background-image: url(./img/botox_6.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -418,7 +418,6 @@
     font-weight: 600;
 }
 
-.AboutServices {}
 
 /* 25% off  */
 
@@ -439,7 +438,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/discountBackGround.jpg);
+    background-image: url(./img/discountBackGround.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -482,7 +481,6 @@
     margin-bottom: 15px;
 }
 
-.Offer25 .btn {}
 
 .Offer25 .btn a {
     border-top-left-radius: 7px;
