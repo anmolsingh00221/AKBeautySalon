@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Philosopher&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+:root {
+    --ast-global-color-0: #e41e45;
+    --ast-global-color-1: #f70077;
+    --ast-global-color-2: #1a1a1a;
+    --ast-global-color-3: #3e4359;
+    --ast-global-color-4: #f7f7f7;
+    --ast-global-color-5: #ffffff;
+    --ast-global-color-6: #243673;
+    --ast-global-color-7: #FBFCFF;
+    --ast-global-color-8: #BFD1FF;
+}
+
+#sectionOne {
+    /* background-color: rgb(234, 234, 234); */
+    /* height: 124vh; */
+    position: relative;
+    color: var(--ast-global-color-4);
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sectionOne::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ast-global-color-2);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+}
+
+#sectionOne::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/serviceBackGround.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+}
+
+.Menu {
+    display: none;
+}
+
+#sectionOne span {
+    display: none;
+}
+
+.navbar {
+    padding: 0 5%;
+
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar .SmallDevice {
+    display: none;
+}
+
+.navbar .logo {
+    font-size: xx-large;
+    text-shadow: .5px .5px 3px var(--ast-global-color-1);
+    color: var(--ast-global-color-1);
+    font-family: 'Philosopher', sans-serif;
+    transition: .4s;
+}
+
+.navbar .logo:hover {
+    /* background-color: rebeccapurple; */
+    transform: scale(1.1);
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: var(--ast-global-color-1);
+}
+
+
+.navbar .items {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar .items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .items .topNumber {
+    /* margin-left: 1%; */
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border: 2px solid var(--ast-global-color-0);
+    border-radius: 5px;
+    font-size: large;
+    padding: 1rem 2rem;
+    color: var(--ast-global-color-5);
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+.topNumber:hover {
+    /* background: red; */
+    background-color: var(--ast-global-color-0);
+}
+
+
+
+.navbar .items ul li {
+    list-style: none;
+    padding: 0 1rem;
+    /* border: 1px solid green; */
+}
+
+.navbar .items ul li a {
+    text-decoration: none;
+    color: var(--ast-global-color-4);
+    font-size: large;
+    cursor: pointer;
+}
+
+/* about me  */
+
+.about {
+    text-align: center;
+    padding: 5rem 5%;
+    padding-bottom: 7rem;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+
+/* transform 180 deg  */
+
+.transform-main {
+    /* background-color: red; */
+    position: relative;
+    z-index: 1;
+    /* height: 200px; */
+
+
+}
+
+/* .transform-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/background180.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+
+} */
+.transform-main {
+    overflow-x: hidden;
+    /* transform: translateY(-150px); */
+    /* border: 1px solid red; */
+}
+
+
+
+.transform {
+
+    /* width: 200vw;
+    position: relative;
+    float: right; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.transform:before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.transform img {
+    height: 0%;
+    width: 135%;
+    transform: rotate(180deg);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* AboutServices */
+
+.AboutServices {
+    padding: 5%;
+}
+
+.AboutServices .someText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.AboutServices .Collaction {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    color: #f70077;
+}
+
+
+.AboutServices .para {
+    text-align: center;
+}
+
+.servicesBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.servicesBox .box {
+    padding: 90% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.servicesBox .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/img/nailart_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    opacity: .80;
+
+}
+
+.servicesBox .box:nth-child(2):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/haircut_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    opacity: .80;
+
+}
+
+.servicesBox .box:nth-child(3):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/massage_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    opacity: .80;
+
+}
+
+.servicesBox .box:nth-child(4):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/cosmetics_4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    opacity: .80;
+
+}
+
+.servicesBox .box:nth-child(5):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/spa_5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    opacity: .80;
+
+}
+
+.servicesBox .box:nth-child(6):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/botox_6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    opacity: .80;
+
+}
+
+.servicesBox .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(/img/nailart_1.jpg); */
+    background: #f70077;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .1;
+    transition: .4s;
+
+} 
+
+.servicesBox .box:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* background-image: url(./img/nailart_1.jpg); */
+    background: #f70077;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .1;
+}
+
+.servicesBox .typeOfServices {
+    font-size: 1.4705882352941rem;
+    line-height: 1.2em;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+}
+
+.AboutServices {}
+
+/* 25% off  */
+
+.Offer25 {
+    padding: 5% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 5% 0;
+
+}
+
+.Offer25::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/discountBackGround.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.Offer25::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f70077;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .7;
+}
+
+.Offer25 .img {
+    max-width: 225px;
+    max-height: 225px;
+}
+
+.Offer25 .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.Offer25 .text {
+    color: #fff;
+}
+
+.Offer25 .text .heading {
+    font-size: 2.2rem;
+    /* font-weight: 400; */
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 15px;
+}
+
+.Offer25 .btn {}
+
+.Offer25 .btn a {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding-top: 17px;
+    padding-right: 30px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    text-decoration: none;
+    border: 1px solid var(--ast-global-color-4);
+    color: var(--ast-global-color-4);
+    background-color: transparent;
+    transition: .4s;
+}
+
+.Offer25 .btn a:hover {
+    border: 1px solid var(--ast-global-color-4);
+    color: var(--ast-global-color-1);
+    background-color: var(--ast-global-color-4);
+}
+
+
+/* footer  */
+.Myfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+/* media quries  */
+@media only screen and (max-width:1280px) {
+
+    .Offer25 {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+}
+@media only screen and (max-width:700px) {
+    .Offer25 {
+      padding: 7% 5%;
+
+    }
+    .Offer25 .text{
+        text-align: center;
+    }
+}

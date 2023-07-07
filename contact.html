@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact/AK Beauty Salon</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/12270196ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="./js/js.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+    <section id="sectionOne">
+        <!-- navigation bar  -->
+
+        <nav class="navbar">
+            <div class="logo">AK Beauty Salon</div>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="#" id="navLinkNumber">+91 1234561234</a></li>
+            </ul>
+
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+          </nav>
+
+
+        <div class="about">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="transform-main">
+            <div class="transform">
+                <img src="./img/about_trans.svg" alt="" dir="rtl">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="FormMap">
+        <div class="form">
+            <div class="heading">Get In Touch</div>
+            <div class="para">Elit tellus, luctus nec ullamcorper mattis, pulvinar.</div>
+
+            <form action="#">
+                <div class="inp">
+                    <input type="text" name="MyName" id="name" placeholder="Name" required>
+                </div>
+                <div class="inp">
+                    <input type="number" name="MyContact" id="Contact" placeholder="Number" required>
+                </div>
+                <div class="inp">
+                    <input type="email" name="MyEmail" id="Email" placeholder="Email" required>
+                </div>
+                <div class="inp">
+                    <select name="" id="" required>
+                        <option value="ss" aria-required="false">Select Services</option>
+                        <option value="ss">Clean Nail Art</option>
+                        <option value="ss">Hair Styling</option>
+                        <option value="ss">Full Body Massage</option>
+                    </select>
+                </div>
+                <div class="inp">
+                    <textarea name="MyMessage" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+
+                <div class="btn">
+                    <button type="submit" value="SEND REQUEST">SEND REQUEST</button>
+                </div>
+            </form>
+        </div>
+        <div class="map">
+
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14019.315355980834!2d77.11513074287988!3d28.54486396088221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c15588a69cf%3A0xbf9e75474e14ad65!2sMahipalpur%20Village%2C%20Mahipalpur%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1688299773158!5m2!1sen!2sin"
+                width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="Myfooter">
+        <div class="box">Copyright © 2023 Makeup Artist</div>
+        <div class="box">Powered by Makeup Artist</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    color: #fff;
+    z-index: 600;
+}
+
+.logo {
+    font-size: xx-large;
+    text-shadow: .5px .5px 3px var(--ast-global-color-1);
+    color: var(--ast-global-color-1);
+    font-family: 'Philosopher', sans-serif;
+    transition: .4s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 15px 0%;
+
+}
+
+.nav-links li {
+    padding: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+
+}
+#navLinkNumber{
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border: 2px solid var(--ast-global-color-0);
+    border-radius: 5px;
+    font-size: large;
+    padding: 1rem 2rem;
+    color: var(--ast-global-color-5);
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+#navLinkNumber:hover{
+    background-color: var(--ast-global-color-0);
+}
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon:hover {
+        color: #ccc;
+    }
+    #navLinkNumber{
+        display: none;
+    }
+
+    .nav-active {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        /* height: 100vh; */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: var(--ast-global-color-0);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-active li {
+        opacity: 0;
+    }
+
+    .nav-active li a {
+        color: #fff;
+    }
+
+    .nav-active li:nth-child(1) {
+        transition: all 0.5s ease-in-out 0.2s;
+    }
+
+    .nav-active li:nth-child(2) {
+        transition: all 0.5s ease-in-out 0.4s;
+    }
+
+    .nav-active li:nth-child(3) {
+        transition: all 0.5s ease-in-out 0.6s;
+    }
+
+    .nav-active li:nth-child(4) {
+        transition: all 0.5s ease-in-out 0.8s;
+    }
+
+    .nav-active li:nth-child(5) {
+        transition: all 0.5s ease-in-out 1s;
+    }
+
+    .nav-active li:nth-child(1).fade-in {
+        opacity: 1;
+    }
+
+    .nav-active li:nth-child(2).fade-in {
+        opacity: 1;
+    }
+
+    .nav-active li:nth-child(3).fade-in {
+        opacity: 1;
+    }
+
+    .nav-active li:nth-child(4).fade-in {
+        opacity: 1;
+    }
+
+    .nav-active li:nth-child(5).fade-in {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 1230px) {
+
+
+
+    .InsidetextInfo .btn a {
+        margin: 0;
+    }
+
+    #PadReq {
+        padding: 3rem;
+    }
+
+    .transformBox {
+        margin: 0 5%;
+        /* max-width: 848px; */
+    }
+
+    .background {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background {
+        color: #fff;
+        padding: 2rem 5% 11rem 5%;
+    }
+
+    /* .MenuBox {
+        grid-template-columns: repeat(2, 1fr);
+
+    } */
+
+
+    #SectionFive {
+        margin: 3rem 0;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:220px) and (max-width: 425px) {
+  
+
+    #sectionOne {
+        /* background-color: rgb(234, 234, 234); */
+        height: auto;
+    }
+
+
+    .insideFrontPage {
+        max-width: 100%;
+    }
+
+    .FrontPage {
+        justify-content: center;
+    }
+
+    .FrontPage .button a:nth-child(1) {
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+
+    .FrontPage .button {
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .transform img {
+        height: 0%;
+        width: 272%;
+    }
+
+    .MenuBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .servicesBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* second section  */
+
+    #SecondSection {
+        border: 1px solid yellow;
+        padding: 0 5%;
+        /* height: 100vh; */
+        display: block;
+        flex-direction: column;
+    }
+
+    .fourImage {
+        text-align: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        gap: 0rem;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+
+
+    .fourImage .img {
+        height: 100%;
+        width: 100%;
+        max-width: fit-content;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+
+    }
+
+
+
+    .fourImage .img img {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        /* margin: 100%; */
+    }
+
+    .fourImage .img:nth-child(2n+1) {
+        display: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        top: 5%;
+
+    }
+
+    .textInfo {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .InsidetextInfo {
+        margin-top: 3rem;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+
+    #sectionOne span {
+        display: block;
+    }
+
+   
+    #sectionOne span {
+        font-size: xx-large;
+    }
+
+    .Myfooter {
+        flex-direction: column-reverse;
+    }
+
+    .Myfooter>div {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width: 768px) {
+ 
+
+
+
+    .fourImage {}
+
+
+    .FrontPage .button a:nth-child(1) {
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+
+    .FrontPage .button {
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .transform img {
+        height: 0%;
+        width: 200%;
+    }
+
+    /* second section  */
+
+    #SecondSection {
+        border: 1px solid yellow;
+        padding: 0 5%;
+        /* height: 100vh; */
+        display: block;
+        flex-direction: column;
+    }
+
+    .fourImage {
+        text-align: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 0rem;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+
+    }
+
+
+    .fourImage .img {
+        height: 100%;
+        width: 100%;
+        max-width: fit-content;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+
+    }
+
+
+
+    .fourImage .img img {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        /* margin: 100%; */
+    }
+
+    .fourImage .img:nth-child(2n+1) {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        top: 5%;
+
+    }
+
+    .textInfo {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .InsidetextInfo {
+        margin-top: 3rem;
+        margin: 0 auto;
+
+    }
+
+
+
+    .servicesBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transformBox {
+        margin: 0 5%;
+        /* max-width: 848px; */
+    }
+
+    .MenuBox {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .background .offer {
+        margin: 15px 20px;
+        /* padding: 2em; */
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+
+
+
+
+    .fourImage {
+        /* text-align: center; */
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 0rem;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .fourImage .img {
+        height: 100%;
+        width: 100%;
+        max-width: fit-content;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+
+    }
+
+    .fourImage .img img {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        /* margin: 100%; */
+    }
+
+    .fourImage .img:nth-child(2n+1) {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        top: 5%;
+
+    }
+
+    .textInfo {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .servicesBox {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1230px) {}

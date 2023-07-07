@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Philosopher&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+:root {
+    --ast-global-color-0: #e41e45;
+    --ast-global-color-1: #f70077;
+    --ast-global-color-2: #1a1a1a;
+    --ast-global-color-3: #3e4359;
+    --ast-global-color-4: #f7f7f7;
+    --ast-global-color-5: #ffffff;
+    --ast-global-color-6: #243673;
+    --ast-global-color-7: #FBFCFF;
+    --ast-global-color-8: #BFD1FF;
+}
+
+#sectionOne {
+    /* background-color: rgb(234, 234, 234); */
+    /* height: 124vh; */
+    position: relative;
+    color: var(--ast-global-color-4);
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sectionOne::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ast-global-color-2);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+}
+
+#sectionOne::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/serviceBackGround.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+}
+
+.Menu {
+    display: none;
+}
+
+#sectionOne span {
+    display: none;
+}
+
+.navbar {
+    padding: 0 5%;
+
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar .SmallDevice {
+    display: none;
+}
+
+.navbar .logo {
+    font-size: xx-large;
+    text-shadow: .5px .5px 3px var(--ast-global-color-1);
+    color: var(--ast-global-color-1);
+    font-family: 'Philosopher', sans-serif;
+    transition: .4s;
+}
+
+.navbar .logo:hover {
+    /* background-color: rebeccapurple; */
+    transform: scale(1.1);
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: var(--ast-global-color-1);
+}
+
+
+.navbar .items {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar .items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .items .topNumber {
+    /* margin-left: 1%; */
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border: 2px solid var(--ast-global-color-0);
+    border-radius: 5px;
+    font-size: large;
+    padding: 1rem 2rem;
+    color: var(--ast-global-color-5);
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+.topNumber:hover {
+    /* background: red; */
+    background-color: var(--ast-global-color-0);
+}
+
+
+
+.navbar .items ul li {
+    list-style: none;
+    padding: 0 1rem;
+    /* border: 1px solid green; */
+}
+
+.navbar .items ul li a {
+    text-decoration: none;
+    color: var(--ast-global-color-4);
+    font-size: large;
+    cursor: pointer;
+}
+
+/* about me  */
+
+.about {
+    text-align: center;
+    padding: 5rem 5%;
+    padding-bottom: 7rem;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+
+/* transform 180 deg  */
+
+.transform-main {
+    /* background-color: red; */
+    position: relative;
+    z-index: 1;
+    /* height: 200px; */
+
+
+}
+
+/* .transform-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/background180.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+
+} */
+.transform-main {
+    overflow-x: hidden;
+    /* transform: translateY(-150px); */
+    /* border: 1px solid red; */
+}
+
+
+
+.transform {
+
+    /* width: 200vw;
+    position: relative;
+    float: right; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.transform:before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.transform img {
+    height: 0%;
+    width: 135%;
+    transform: rotate(180deg);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Second Section  */
+
+.AboutMeInDetail {
+    /* border: 2px solid green; */
+    padding: 2.5rem 5%;
+    display: flex;
+    /* height: 100vh; */
+    /* flex-wrap: wrap; */
+}
+
+.AboutMeInDetail .img {
+    /* border: 2px solid green; */
+}
+
+.AboutMeInDetail .img img {
+    /* width: 100%; */
+    max-width: 400px;
+    border-radius: 5%;
+
+}
+
+.AboutMeInDetail .infoAboutme {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 5%;
+}
+
+.AboutMeInDetail .infoAboutme .heading,
+.AboutMeInDetail .infoAboutme>div,
+.AboutMeInDetail .infoAboutme .para,
+.AboutMeInDetail .infoAboutme .h3 {
+    margin: 10px 0;
+}
+
+.AboutMeInDetail .infoAboutme .heading {
+    color: var(--ast-global-color-1);
+    font-family: 'Philosopher', sans-serif;
+
+}
+
+.AboutMeInDetail .infoAboutme .Passionate {
+    /* color: var(--ast-global-color-1); */
+    font-family: 'Philosopher', sans-serif;
+
+}
+
+.AboutMeInDetail .infoAboutme h2 {
+    font-family: 'Philosopher', sans-serif;
+    color: var(--ast-global-color-1);
+    font-family: 'Philosopher', sans-serif;
+}
+
+.AboutMeInDetail .infoAboutme .NumEmail .rightMargin {
+    margin-right: 1rem;
+}
+
+.AboutMeInDetail .infoAboutme .NumEmail {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.AboutMeInDetail .infoAboutme .NumEmail div {
+    /* border: 1px solid orange; */
+    /* width: 40%; */
+    color: #e41e45;
+}
+
+.AboutMeInDetail .infoAboutme .NumEmail div span {
+    margin-right: .5em;
+}
+
+.AboutMeInDetail .infoAboutme .NumEmail div a {
+    text-decoration: none;
+    color: black;
+}
+
+.AboutMeInDetail .infoAboutme .NumEmail div a:hover {
+    color: #e41e45;
+}
+
+
+/* AboutTeam  */
+.AboutTeam {
+    text-align: center;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.AboutTeam .teamText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.AboutTeam .teamText .team {
+    font-family: 'Philosopher',sans-serif;
+    font-weight: 400;
+
+}
+
+.AboutTeam .teamText .heading {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Philosopher',sans-serif;
+    color: #f70077;
+}
+
+.AboutTeam .teamText .ourThought {
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.AboutTeam .teamImgInfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.AboutTeam .teamImgInfo .box {
+    /* border: 1px solid green; */
+    box-shadow: 0cm 0px 18px 0px rgb(209, 209, 209);
+    border-radius: 2%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-evenly;
+
+}
+
+.AboutTeam .teamImgInfo .fourthBox {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .5rem;
+    text-align: start;
+}
+
+.AboutTeam .teamImgInfo .fourthBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/discountBackGround.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+}
+
+.AboutTeam .teamImgInfo .fourthBox::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("/img/discountBackGround.jpg"); */
+    background-color: var(--ast-global-color-0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: .7;
+}
+
+.AboutTeam .teamImgInfo .fourthBox .off {
+    font-size: 1.6470588235294rem;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.AboutTeam .teamImgInfo .fourthBox .sale {}
+
+.AboutTeam .teamImgInfo .fourthBox .btn {
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.AboutTeam .teamImgInfo .fourthBox .btn a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    padding: .5rem 2rem;
+    transition: .3s;
+}
+
+.AboutTeam .teamImgInfo .fourthBox .btn a:hover {
+    background-color: #fff;
+    color: var(--ast-global-color-1);
+}
+
+.AboutTeam .teamImgInfo .box .img {}
+
+.AboutTeam .teamImgInfo .box .img img {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    border-radius: 12%;
+
+}
+
+.AboutTeam .teamImgInfo .box .name {}
+
+.AboutTeam .teamImgInfo .box .position {}
+
+/* footer  */
+.Myfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+@media only screen and (max-width:1040px) {
+    .NumEmail {
+        /* flex-direction: column; */
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .AboutMeInDetail {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .infoAboutme {
+        text-align: center;
+    }
+
+    .AboutMeInDetail .img {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .AboutMeInDetail .img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .AboutTeam  */
+
+
+    .AboutTeam .teamImgInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .AboutTeam .teamImgInfo .fourthBox {
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        text-align: start;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .NumEmail {
+        flex-direction: column;
+    }
+
+    .AboutMeInDetail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoAboutme {
+        text-align: center;
+    }
+
+    .AboutMeInDetail .img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .AboutMeInDetail .img img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /* .AboutTeam  */
+
+
+    .AboutTeam .teamImgInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
