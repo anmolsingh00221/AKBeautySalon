@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +22,7 @@ body {
     transition: .4s;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
@@ -44,7 +42,8 @@ body {
     text-decoration: none;
 
 }
-#navLinkNumber{
+
+#navLinkNumber {
     padding: .5rem 1rem;
     text-decoration: none;
     border: 2px solid var(--ast-global-color-0);
@@ -57,9 +56,10 @@ body {
     cursor: pointer;
 }
 
-#navLinkNumber:hover{
+#navLinkNumber:hover {
     background-color: var(--ast-global-color-0);
 }
+
 .menu-icon {
     font-size: 24px;
     cursor: pointer;
@@ -78,7 +78,8 @@ body {
     .menu-icon:hover {
         color: #ccc;
     }
-    #navLinkNumber{
+
+    #navLinkNumber {
         display: none;
     }
 
@@ -186,7 +187,7 @@ body {
 }
 
 @media only screen and (min-width:220px) and (max-width: 425px) {
-  
+
 
     #sectionOne {
         /* background-color: rgb(234, 234, 234); */
@@ -307,7 +308,7 @@ body {
         display: block;
     }
 
-   
+
     #sectionOne span {
         font-size: xx-large;
     }
@@ -322,10 +323,6 @@ body {
 }
 
 @media only screen and (min-width:425px) and (max-width: 768px) {
- 
-
-
-
     .fourImage {}
 
 
