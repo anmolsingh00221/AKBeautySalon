@@ -69,8 +69,12 @@ body {
 @media screen and (max-width: 1024px) {
     .nav-links {
         display: none;
-    }
+        /* direction: rtl; */
 
+    }
+    .nav-links li {
+        padding: 0 5%;
+    }
     .menu-icon {
         display: block;
     }
@@ -89,6 +93,8 @@ body {
         align-items: start;
         justify-content: start;
         width: 100%;
+        /* direction: rtl; */
+
         /* height: 100vh; */
         position: absolute;
         top: 80px;
